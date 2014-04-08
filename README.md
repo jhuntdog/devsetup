@@ -13,8 +13,6 @@ Basic repo for notes about setting up a new pc for app development
 
 Here is a *short* list of where I'd start. The list is not exhaustive or authoritative. It reflects my personal preference and a small of amount of knowledge gained through experience.
 
-Start by installing the 
-
 
 ### Basic Apps
 
