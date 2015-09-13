@@ -25,22 +25,25 @@ Here is a *short* list of where I'd start. The list is not exhaustive or authori
 
 ### Text Editor
 
-My two favorites:
+My favorite:
 
 - [ ] [Notepad++](http://notepad-plus-plus.org/)
+
+Others
+- [ ] [Atom](https://atom.io/)
 - [ ] [Sublime Text 3](http://www.sublimetext.com/3)
 
 
 ### IDE
 
-This comes down to personal preference. Right now, I'm mostly using PhpStorm and Visual Studio 2013.
+This comes down to personal preference. Right now, I'm mostly using PhpStorm and Visual Studio 2015.
 
 You may be able to get Visual Studio Professional for free because you're a student at dreamspark.com.
 
 
 ### Build Tools
 
-- [ ] [Visual Studio Express](http://www.visualstudio.com/downloads/download-visual-studio-vs)
+- [ ] [Visual Studio](http://www.visualstudio.com)
 
 Optional
 
