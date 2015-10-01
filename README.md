@@ -55,6 +55,12 @@ JetBrains
 
 - [ ] [Node](http://nodejs.org/)
 
+Node Packages
+
+	```
+	npm install -g bower grunt gulp typescript
+	```
+
 
 
 

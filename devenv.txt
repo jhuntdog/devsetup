@@ -1,0 +1,66 @@
+# development
+
+Windows 10 Development Environment
+
+
+## Powershell
+
+Start Powershell in Administration mode and change the execution policy to RemoteSigned
+
+    Set-ExecutionPolicy RemoteSigned
+
+### Using the OneGet package manager in Windows 10
+
+PowerShell v5 comes with a package manager called OneGet, which will use NuGet to retrieve and install packages.
+
+List the available packages you can install
+
+    Find-Package | ogv
+
+This will prompt you once with a question about installing NuGet, answer [Yes]
+
+
+### Creating PowerShell default profile
+
+Let's create a Powershell profile.
+
+    New-Item -Path (Split-Path -parent $profile) -ItemType Directory
+    echo $null > $profile
+
+This will create an empty file named Microsoft.PowerShell_profile.ps1 in the folder WindowsPowerShell in your My Documents folder.
+
+Open up the file in your default text editor
+
+      start $profile
+
+And add the following content to the file:
+    Write-Host "Hello, world from the default profile"
+
+Restart PowerShell
+
+
+
+Now create the following folders on your disk:
+
+    md C:\Tools
+    md C:\Tools\PowerShellScripts
+    md C:\Repository
+    md C:\Users\<username>\Documents\WindowsPowerShell\Modules
+
+Open up your Microsoft.PowerShell_profile.ps1 (type start $profile) file again and add the following text:
+
+  ##-------------------------------------------
+  ## Create the default drives to common paths
+  ##-------------------------------------------
+  New-PSDrive -name Repository -psprovider FileSystem -root C:\Repository | Out-Null
+  New-PSDrive -name Tools -psprovider FileSystem -root C:\Tools | Out-Null
+  New-PSDrive -name Modules -psprovider FileSystem -root $Home\Documents\WindowsPowerShell\Modules | Out-Null
+
+  ##-------------------------------------------
+  ## Goto repository folder
+  ##-------------------------------------------
+  Set-Location Repository:
+
+  # Load up Posh-Git from github app
+  . (Resolve-Path "$env:LOCALAPPDATA\GitHub\shell.ps1")
+  . $env:github_posh_git\profile.example.ps1
