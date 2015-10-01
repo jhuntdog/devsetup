@@ -1,12 +1,12 @@
 devsetup
 ========
 
-Basic repo for notes about setting up a new pc for app development
+Notes about setting up a new pc
 
 
 ## <a id="top"></a>Description
 
-	Setup new Windows 8 PC for work, play, development
+Setup new Windows PC for work, play, development
 
 
 ## Getting Started
@@ -18,57 +18,49 @@ Here is a *short* list of where I'd start. The list is not exhaustive or authori
 
 - [ ] Browsers - Chrome, Firefox (optionally, set up sync)
 - [ ] [7zip](http://www.7-zip.org/)
+- [ ] [Notepad++](http://notepad-plus-plus.org/)
 
 
 
 ## Dev Env Setup
 
-### Text Editor
+### Base
 
-My favorite:
+- [ ] [Visual Studio](http://www.visualstudio.com)
+- [ ] [Git for Windows](https://git-scm.com/download/win)
+- [ ] [Github for Windows](https://desktop.github.com/)
 
-- [ ] [Notepad++](http://notepad-plus-plus.org/)
+### IDEs
 
-Others
+Text Editors
 - [ ] [Atom](https://atom.io/)
 - [ ] [Sublime Text 3](http://www.sublimetext.com/3)
 
-
-### IDE
-
-This comes down to personal preference. Right now, I'm mostly using PhpStorm and Visual Studio 2015.
-
-You may be able to get Visual Studio Professional for free because you're a student at dreamspark.com.
+JetBrains
+- [ ] PhpStorm
 
 
-### Build Tools
+### Python
+- [ ] [Python](http://www.python.org/getit/windows/)
 
-- [ ] [Visual Studio](http://www.visualstudio.com)
 
-Optional
+
+### Optional Build Tools
 
 - [ ] [MinGW](http://www.mingw.org/) and add to path -> `C:\tools\MinGW\bin` or whatever
-- [ ] [Python](http://www.python.org/getit/windows/)
+
 
 
 ### Node
 
 - [ ] [Node](http://nodejs.org/)
 
-_Install it!_
 
 
 
-#### GIT
+### GIT
 
-
-> Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
-
-from
-
-Install Apps [github](http://github.com) and [msysGit & Git](http://msysgit.github.com/)
-
-Add Git to path, for example `C:\Progra~2\Git\bin`
+Make sure git has been added to path
 
 Configure Git - see [github:help](https://help.github.com/articles/set-up-git#platform-linux) for details
 
@@ -103,4 +95,4 @@ Set up powershell to assist with git usage
 	// initialize powershell profile
 	New-item –type file –force $profile
 
-Install [[posh-git](https://github.com/dahlbyk/posh-git)
+Install [posh-git](https://github.com/dahlbyk/posh-git)
